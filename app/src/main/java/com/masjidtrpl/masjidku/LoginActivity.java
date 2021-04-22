@@ -23,7 +23,7 @@ public class LoginActivity extends AppCompatActivity {
     private EditText email, pass;
     private FirebaseAuth auth;
     private FirebaseAuth.AuthStateListener listener;
-    private String getEmail, getPass;
+    private String getEmail, getPass    ;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
