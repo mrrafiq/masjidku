@@ -1,5 +1,6 @@
 package com.masjidtrpl.masjidku;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.text.TextUtils;
 import android.text.method.PasswordTransformationMethod;
@@ -50,7 +51,7 @@ public class SignUpActivity extends AppCompatActivity {
                 if (isEmpty(email.getText().toString()) || isEmpty(pass.getText().toString()) || isEmpty(pass1.getText().toString())) {
                     Toast.makeText(SignUpActivity.this, "Data tidak boleh kosong!", Toast.LENGTH_SHORT).show();
                 } else {
-                    if (pass.equals(pass1)){
+                    if (pass.getText().toString().equals(pass1.getText().toString())){
                         cekDataUser();
                     } else{
                         Toast.makeText(SignUpActivity.this, "Password Tidak boleh berbeda", Toast.LENGTH_SHORT).show();
@@ -78,6 +79,7 @@ public class SignUpActivity extends AppCompatActivity {
                     public void onComplete(@NonNull Task<AuthResult> task) {
                         if (task.isSuccessful()){
                             Toast.makeText(SignUpActivity.this, "Sign Up Berhasil", Toast.LENGTH_SHORT).show();
+                            startActivity(new Intent(SignUpActivity.this, LoginActivity.class));
                             finish();
                         } else{
                             Toast.makeText(SignUpActivity.this, "Terjadi kesalahan!", Toast.LENGTH_SHORT).show();

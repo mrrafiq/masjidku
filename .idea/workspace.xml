@@ -30,7 +30,7 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2c330158-1383-48e8-b2e5-cc3f03abcd9f" name="Default Changelist" comment="Manifest dan SDK.dir" />
+    <list default="true" id="2c330158-1383-48e8-b2e5-cc3f03abcd9f" name="Default Changelist" comment="SignUp" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -224,7 +224,28 @@
       <option name="project" value="LOCAL" />
       <updated>1619065431333</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Manifest dan SDK.dir">
+      <created>1619066540418</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1619066540418</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Manifest dan SDK.dir">
+      <created>1619066548676</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1619066548676</updated>
+    </task>
+    <task id="LOCAL-00006" summary="SignUp">
+      <created>1619074201688</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1619074201688</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -258,7 +279,8 @@
     <MESSAGE value="Kurang username" />
     <MESSAGE value="OK" />
     <MESSAGE value="Manifest dan SDK.dir" />
-    <option name="LAST_COMMIT_MESSAGE" value="Manifest dan SDK.dir" />
+    <MESSAGE value="SignUp" />
+    <option name="LAST_COMMIT_MESSAGE" value="SignUp" />
   </component>
   <component name="WindowStateProjectService">
     <state x="1120" y="259" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1618200728550">
@@ -285,5 +307,9 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="461" y="162" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1618201188357" />
+    <state x="-871" y="298" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1619066846746">
+      <screen x="-1360" y="0" width="1360" height="768" />
+    </state>
+    <state x="-871" y="298" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1366.768/-1360.0.1360.768@-1360.0.1360.768" timestamp="1619066846746" />
   </component>
 </project>
