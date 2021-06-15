@@ -18,7 +18,7 @@ import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 
-public class LoginActivity extends AppCompatActivity {
+public class SignInActivity extends AppCompatActivity {
     private Button Login;
     private EditText email, pass;
     private FirebaseAuth auth;
@@ -28,7 +28,7 @@ public class LoginActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_login);
+        setContentView(R.layout.activity_sign_in);
         Login = findViewById(R.id.btnLogin);
         email = findViewById(R.id.email);
         pass = findViewById(R.id.password);
@@ -41,7 +41,7 @@ public class LoginActivity extends AppCompatActivity {
             public void onAuthStateChanged(@NonNull FirebaseAuth firebaseAuth) {
                 FirebaseUser user = firebaseAuth.getCurrentUser();
                 if (user != null){
-                    startActivity(new Intent(LoginActivity.this, MainActivity.class));
+                    startActivity(new Intent(SignInActivity.this, MainActivity.class));
                     finish();
                 }
             }
@@ -54,7 +54,7 @@ public class LoginActivity extends AppCompatActivity {
                 getPass = pass.getText().toString();
 
                 if (isEmpty(getEmail) || isEmpty(getPass)){
-                    Toast.makeText(LoginActivity.this, "Email atau sandi tidak boleh kosong", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(SignInActivity.this, "Email atau sandi tidak boleh kosong", Toast.LENGTH_SHORT).show();
                 } else{
                     loginUser();
                 }
@@ -86,9 +86,9 @@ public class LoginActivity extends AppCompatActivity {
                     @Override
                     public void onComplete(@NonNull Task<AuthResult> task) {
                         if (task.isSuccessful()){
-                            Toast.makeText(LoginActivity.this, "Login Succes", Toast.LENGTH_SHORT).show();
+                            Toast.makeText(SignInActivity.this, "Login Succes", Toast.LENGTH_SHORT).show();
                         } else{
-                            Toast.makeText(LoginActivity.this, "Tidak dapat login", Toast.LENGTH_SHORT).show();
+                            Toast.makeText(SignInActivity.this, "Tidak dapat login", Toast.LENGTH_SHORT).show();
                         }
                     }
                 });
